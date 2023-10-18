@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<script language="javascript" type="text/javascript">
+   function change(v)
+   {
+     if(v==1)
+	 {
+	    document.myform.list[0].text="Computer Engineering";
+		document.myform.list[0].value=1
+		
+		document.myform.list[1].text="Computer Technology";
+		document.myform.list[1].value=2
+		
+		document.myform.list[2].text="Mechanical Engineering";
+		document.myform.list[3].value=3
+	 }
+	 
+	 if(v==2)
+	 {
+	    document.myform.list[0].text="Goverment Polytechnic";
+		document.myform.list[0].value=1
+		
+		document.myform.list[1].text="Goverment Polytechnic,nashik";
+		document.myform.list[1].value=2
+		
+		document.myform.list[2].text="Goverment Polytechnic,pune";
+		document.myform.list[3].value=3
+	 }
+	 
+	  
+	 if(v==3)
+	 {
+	    document.myform.list[0].text="First Year";
+		document.myform.list[0].value=1
+		
+		document.myform.list[1].text="Second Year";
+		document.myform.list[1].value=2
+		
+		document.myform.list[2].text="Third Year";
+		document.myform.list[3].value=3
+	 }
+   }
+ 
+
+</script>
+</head>
+
+<body>
+   <form name="myform">
+   
+   <input type="radio" name="r1" value="1" onclick="change(this.value)">Department
+    <input type="radio" name="r1" value="2" onclick="change(this.value)">Institude
+	 <input type="radio" name="r1" value="3" onclick="change(this.value)">Classes
+	 
+	 <select name="list">
+	 <option value=1>Computer Engineering
+	 <option value=1>Computer Technology	 
+	 <option value=1>Mechanical Engineering
+	 
+	 </select>
+   </form>
+   
+</body>
+</html>

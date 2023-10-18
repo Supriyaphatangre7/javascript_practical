@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+  function create_cookie()
+  {
+     var nm=document.getElementById("id1");
+	 document.cookie="Username"+nm+";";
+	 alert("cookie is created");
+  
+  }
+  
+  function show_cookie()
+  {
+    var x=document.cookie;
+	alert(x);
+  }
+  
+
+</script>
+Enter Name :<input type="text" name="t1" id="id1">
+<input type="button" name="b1" value="create" onclick="create_cookie()">
+<input type="button" name="b2" value="show" onclick="show_cookie()">
+</head>
+</html>

@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<script language="javascript" type="text/javascript">
+function checkoperation()
+{
+   var regex=/abc/gmi;
+   var str=document.getElementById("id1").value;
+   var result=regex.exec(str);
+   document.getElementById("p1").innerHTML=result;
+   document.getElementById("p2").innerHTML=result.index;
+}
+
+</script>
+</head>
+
+<body>
+Enter text :<input type="text" id="id1">
+<input type="button" value="check" onclick="checkoperation()">
+<br>
+<br>
+<p id="p1"></p>
+<br>
+<p id="p2"></p>
+</body>
+</html>

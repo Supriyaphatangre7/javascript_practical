@@ -1,0 +1,28 @@
+<html>
+<body>
+<input type="text" id="id1">
+<input type="text" id="id2">
+
+<script language="javascript" type="text/javascript">
+    var f1=document.getElementById("id1");
+	f1.onfocus=focus;
+	f1.onblur=blur;
+	
+	var f2=document.getElementById("id2");
+	f2.onfocus=focus;
+	f2.onblur=blur;
+
+
+   function focus()
+   {
+      this.value="in focus";
+   }
+   
+   
+   function blur()
+   {
+      this.value="in blur";
+   }
+</script>
+</body>
+</html>

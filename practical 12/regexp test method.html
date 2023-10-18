@@ -1,0 +1,19 @@
+<html>
+
+<head>
+<script language="javascript" type="text/javascript">
+    function check() 
+	{
+	   var Regexp=/supriya/ig;
+	   var str=document.getElementById("id1").value;
+	   var result=Regexp.test(str);
+	   alert("The result is :"+result);
+	}
+
+</script>
+</head>
+<body>
+   Enter Name : <input type="text" name="tf1" id="id1">
+                <input type="button" name="b1" value="Check" onclick="check()">
+</body>
+</html>

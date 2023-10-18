@@ -1,0 +1,63 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+var a1=new Array("virat","abd","rahul","rohit");
+var a2=new Array("rose","lisa","jisoo","jennie");
+function display(e)
+{
+  var s1=document.getElementById("stud");
+  var a=s1.options.length;
+  for(i=a;i>=0;i--)
+  {
+    s1.options.remove(i);
+  }
+  
+  var b=document.getElementById("myselect").value;
+  if(b=="Boys")
+  {
+     for(i=0;i<a1.length;i++)
+	 {
+	   var opt=document.createElement("option");
+	   opt.value=a1[i];
+	   opt.textContent=a1[i];
+	   s1.appendChild(opt);
+	 }
+  }
+  else if(b=="Girls")
+  {
+     for(i=0;i<a1.length;i++)
+	 {
+	   var opt=document.createElement("option");
+	   opt.value=a2[i];
+	   opt.textContent=a2[i];
+	   s1.appendChild(opt);
+	 }
+  }
+  
+  else if(b=="Class")
+  {
+    
+	
+	   var opt=document.createElement("option");
+	   opt.value="Student";
+	   opt.textContent="Student";
+	   s1.appendChild(opt);
+	 
+  }
+}
+
+</script>
+</head>
+
+<body>
+<select id="myselect" onchange="display(this)">
+<option value="Class">Class</option>
+<option value="Boys">Boys</option>
+<option value="Girls">Girls</option>
+</select>
+
+<select id="stud">
+<option value="Student">Student</option>
+
+</body>
+</html>

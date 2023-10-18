@@ -1,0 +1,50 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+   function display()
+   {
+      var str=prompt("enter the string");
+	  document.write("entered string is :"+str);
+	  
+	  document.write("<br>convert string to uppercase");
+	  var s1=str.toUpperCase();
+	  document.write("<br>uppercase string is :"+s1);
+	  document.write("<hr>");
+	  
+	  document.write("<br>convert string to lowercase");
+	  var s2=str.toLowerCase();
+	  document.write("<br>lowercase string is :"+s2);
+	  document.write("<hr>");
+	  
+	   document.write("<br>get character from entered string");
+	  var s3=str.charAt(2);
+	  document.write("<br>character at index 2 is :"+s3);
+	  document.write("<hr>");
+	  
+	   document.write("<br>extract particular part of string ");
+	  var s4=str.slice(2,5);
+	  document.write("<br>extracted  string is :"+s4);
+	  document.write("<hr>");
+	  
+	   document.write("<br>extract string using substring()");
+	  var s5=str.substring(0,8);
+	  document.write("<br>extracted  string is :"+s5);
+	  document.write("<hr>");
+	  
+	  document.write("<br>split()");
+	  var s6=str.split("",2);
+	  document.write("<br>split string is :"+s6);
+	  
+	  
+	  
+   }
+  
+  
+ </script>
+</head>
+<body>
+ <input type="button" name="b1" value="click" onclick="display()">
+</body>
+
+
+</html>

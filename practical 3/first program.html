@@ -1,0 +1,45 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+ 
+ var student=new Array("virat","rahul","rohit","strokes","sam");
+  for(i=0;i<student.length;i++)
+    {
+	
+	   document.write("<br>"+student[i]);
+	}  
+	document.write("<hr>");
+	
+	document.write("removing first and last element using shift and pop method ");
+	student.shift();
+	student.pop();
+	for(i=0;i<student.length;i++)
+    {
+	
+	   document.write("<br>"+student[i]);
+	} 
+	document.write("<hr>");
+	
+	
+	document.write("adding  first and last element using unshift and push method ");
+	student.unshift("virat");
+	student.push("dhoni");
+	for(i=0;i<student.length;i++)
+    {
+	
+	   document.write("<br>"+student[i]);
+	} 
+	document.write("<hr>");
+	
+	document.write("sorting array elements using sort() method");
+	student.sort();
+	for(i=0;i<student.length;i++)
+    {
+	
+	   document.write("<br>"+student[i]);
+	} 
+ 
+</script>
+
+</head>
+</html>

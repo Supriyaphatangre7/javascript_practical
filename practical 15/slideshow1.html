@@ -1,0 +1,29 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript"> 
+ var arr=new Array("anime1.jpg","anime2.jpg","anime3.jpg","anime4.jpg","anime5.jpeg");
+ i=0;
+ function slideshow(status)
+ {
+  i=i+status;
+    if(i>arr.length-1)
+	{
+	  i=0;
+	}
+	if(i<0)
+	{
+	   i=arr.length-1;
+	}
+	document.getElementById("id1").src=arr[i];
+ }
+
+</script>
+
+</head>
+<body>
+<img src="apple.png" height="300" width="500" id="id1"><br><br>
+<input type="button" name="b1" value="previous" onclick="slideshow(-1)">
+<input type="button" name="b2" value="next" onclick="slideshow(1)">
+
+</body>
+</html>
